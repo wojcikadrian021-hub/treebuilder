@@ -1,0 +1,8 @@
+
+For this, I made a company directory using a binary tree. Each employee is stored in an EmployeeNode, which has a name and two spots for reports. The TeamTree class keeps track of the main team lead and handles adding and printing employees.
+
+Recursive insertion works by starting at the team lead and checking if that employee is the manager I am looking for. If the names match, the program checks if the left or right spot is open. If it is open, it adds the new employee there. If the names do not match, the program searches the left branch and then the right branch. It keeps doing this until it finds the manager or runs out of employees to check.
+
+One challenge was making sure the search did not accidentally go back to the top of the tree every time it reached an empty spot. I fixed this by only calling the insert method on branches that already have an employee. Another challenge was making the program show a useful message when a manager was missing or a position was already filled. I added checks for these situations.
+
+Trees are useful when information has a clear order or hierarchy. For example, businesses can use them for employee reporting structures, and computers use them to organize folders and files. A tree also makes it easier to show who reports to whom compared to a simple flat list.
